@@ -3,7 +3,7 @@
   hosts: all
   tasks:
           - name: Disk usage from command module
-            command: df -h
+            command: df -h / /var/lib/longhorn/
             register: space
           - debug:
                   var: space
